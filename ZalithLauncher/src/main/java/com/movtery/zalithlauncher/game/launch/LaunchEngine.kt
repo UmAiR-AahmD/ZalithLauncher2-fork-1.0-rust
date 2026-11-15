@@ -19,10 +19,8 @@
 package com.movtery.zalithlauncher.game.launch
 
 /**
- * Selects which game engine a Minecraft instance uses.
- *
- * Java remains the compatibility-preserving default. Horizon is an opt-in engine
- * and must not be routed into the JVM launch pipeline.
+ * Selects which game engine an instance uses. Java remains the default; Horizon
+ * must be explicitly opted into and is launched outside the JVM pipeline.
  */
 enum class EngineBackend {
     JAVA,
